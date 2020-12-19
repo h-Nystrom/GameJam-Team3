@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 41137943921798448}
   - component: {fileID: 2843691061106137594}
   - component: {fileID: 5869128348286657837}
+  - component: {fileID: -3802942338106048796}
   m_Layer: 0
   m_Name: RoadStraight
   m_TagString: Untagged
@@ -98,3 +99,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8312093586041497703, guid: 7d7e5ad00e16c3d4c9a2aca9a8bdc0cd, type: 3}
+--- !u!65 &-3802942338106048796
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4356719735199561775}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 1, z: 20}
+  m_Center: {x: 0, y: -0.5, z: 0}

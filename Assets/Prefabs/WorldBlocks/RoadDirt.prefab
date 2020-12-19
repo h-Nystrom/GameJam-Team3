@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3200504947466618141}
   - component: {fileID: 2001183591432702648}
   - component: {fileID: 4332839519888817778}
+  - component: {fileID: 1770752718655221228}
   m_Layer: 0
   m_Name: RoadDirt
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1770752718655221228
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2819722748493864871}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 1, z: 27}
+  m_Center: {x: 0, y: -0.5, z: 3.5}
