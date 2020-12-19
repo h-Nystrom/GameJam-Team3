@@ -26,7 +26,7 @@ namespace Vehicle{
         void FixedUpdate(){
             forwardSpeed = Vector3.Dot(rb.velocity, transform.forward);
             sideSpeed = Vector3.Dot(rb.velocity, transform.right);
-            rb.AddForce((-sideSpeed * transform.right), ForceMode.VelocityChange);
+            rb.AddForce((-sideSpeed * transform.right * carHandler.HandBreak), ForceMode.VelocityChange);
             OnMove(carHandler.Direction);
             //TODO: Add on ticks return!
             OnGround();
@@ -51,7 +51,7 @@ namespace Vehicle{
             }
             else{
                 onGround = false;
-                rb.angularDrag = 0;
+                rb.angularDrag = 5;
             }
                 
         }

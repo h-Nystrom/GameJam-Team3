@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c3ed5da0e609244497926a5758e925f, type: 3}
   m_Name: Ambulance
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 25
   turnSpeed: 5
   gripOnSpeed: 0.5
