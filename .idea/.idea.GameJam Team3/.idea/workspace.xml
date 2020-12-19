@@ -27,8 +27,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle/Player/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle/CarSO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle/CarSo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle/CarMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle/Player/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle/CarMovement.cs" />
       </list>
     </option>
   </component>
@@ -74,7 +74,7 @@
       <workItem from="1608383221756" duration="5394000" />
       <workItem from="1608388638767" duration="2402000" />
       <workItem from="1608391064526" duration="3716000" />
-      <workItem from="1608394829614" duration="4393000" />
+      <workItem from="1608394829614" duration="6755000" />
     </task>
     <servers />
   </component>

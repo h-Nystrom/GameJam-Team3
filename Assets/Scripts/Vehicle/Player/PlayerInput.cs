@@ -18,10 +18,13 @@ namespace Player{
         void Update(){
             direction = new Vector2(Input.GetAxis("Vertical"),Input.GetAxis("Horizontal"));
             if (Input.GetAxis("Jump") == 0){
-                handBreak = 1;
+                if(handBreak <= 1)
+                    handBreak += 0.5f * Time.deltaTime;
             }
-            else
-                handBreak = 0.01f;
+            else{
+                handBreak = 0.005f;
+            }
+                
         }
     }
 
