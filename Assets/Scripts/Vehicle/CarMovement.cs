@@ -1,17 +1,26 @@
-﻿using UnityEngine;
+﻿using System;
+using Player;
+using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
-public class CarMovement : MonoBehaviour{
-    [SerializeField] float speed;
-    [SerializeField] float turnSpeed;
-    [SerializeField] float handling;
-    Rigidbody rb => GetComponent<Rigidbody>();
-    
-    public void OnTurn(float angle){
-        
-    }
+namespace Vehicle{
+    [RequireComponent(typeof(Rigidbody))]
+    public class CarMovement : MonoBehaviour{
+        [SerializeField] CarSo carSo;
+        ICarHandler carHandler; 
+        Rigidbody rb => GetComponent<Rigidbody>();
 
-    public void OnMove(float direction){
-        
+        void Awake(){
+            carHandler = GetComponent<ICarHandler>();
+        }
+
+        void FixedUpdate(){
+            OnMove(carHandler.Direction);
+        }
+        void OnMove(Vector2 direction){
+            //MaxSpeed
+            rb.AddForce(transform.forward * carHandler.Direction.x * carSo.Speed);
+            
+        }
     }
 }
+

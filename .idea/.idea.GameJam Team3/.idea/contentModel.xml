@@ -14,8 +14,9 @@
           <e p="SimpleCameraController.cs" t="Include" />
           <e p="Vehicle" t="Include">
             <e p="CarMovement.cs" t="Include" />
+            <e p="CarSO.cs" t="Include" />
             <e p="Player" t="Include">
-              <e p="CharacterController.cs" t="Include" />
+              <e p="PlayerInput.cs" t="Include" />
             </e>
           </e>
         </e>
