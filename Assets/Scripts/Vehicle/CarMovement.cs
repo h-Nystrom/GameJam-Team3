@@ -1,5 +1,5 @@
 ﻿using System;
-using Player;
+using Vehicle.Player;
 using UnityEngine;
 
 namespace Vehicle{

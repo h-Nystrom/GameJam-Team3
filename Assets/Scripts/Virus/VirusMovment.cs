@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Patient;
+using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class VirusMovment : MonoBehaviour{
@@ -16,6 +17,6 @@ public class VirusMovment : MonoBehaviour{
     void OnTriggerEnter(Collider other){
         if (other.gameObject.layer == LayerMask.NameToLayer("Wall")){
             transform.rotation = Quaternion.Euler(0,transform.localRotation.y - 90,0);
-        }   
+        }
     }
 }

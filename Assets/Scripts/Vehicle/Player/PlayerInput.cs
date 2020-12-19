@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using Vehicle;
 
-namespace Player{
+namespace Vehicle.Player{
     
     public class PlayerInput : MonoBehaviour, ICarHandler{
 
@@ -22,7 +22,7 @@ namespace Player{
                     handBreak += 0.5f * Time.deltaTime;
             }
             else{
-                handBreak = 0.005f;
+                handBreak = 0.01f;
             }
                 
         }
