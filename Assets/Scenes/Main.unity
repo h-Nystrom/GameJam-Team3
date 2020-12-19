@@ -6150,7 +6150,23 @@ PrefabInstance:
     - target: {fileID: 6566564923848660218, guid: 10872733d2c32b244af1f570a6381f93, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1824984323}
+      objectReference: {fileID: 1959013886}
+    - target: {fileID: 6858523573453052708, guid: 10872733d2c32b244af1f570a6381f93, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6858523573453052708, guid: 10872733d2c32b244af1f570a6381f93, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8870109
+      objectReference: {fileID: 0}
+    - target: {fileID: 6858523573453052708, guid: 10872733d2c32b244af1f570a6381f93, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.46174863
+      objectReference: {fileID: 0}
+    - target: {fileID: 6858523573453052708, guid: 10872733d2c32b244af1f570a6381f93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 55
+      objectReference: {fileID: 0}
     - target: {fileID: 6858523574157029908, guid: 10872733d2c32b244af1f570a6381f93, type: 3}
       propertyPath: m_Name
       value: CameraFollow
@@ -6161,15 +6177,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6858523574157029911, guid: 10872733d2c32b244af1f570a6381f93, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 38.37
       objectReference: {fileID: 0}
     - target: {fileID: 6858523574157029911, guid: 10872733d2c32b244af1f570a6381f93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 6858523574157029911, guid: 10872733d2c32b244af1f570a6381f93, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.88
       objectReference: {fileID: 0}
     - target: {fileID: 6858523574157029911, guid: 10872733d2c32b244af1f570a6381f93, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12184,11 +12200,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3980615996861883029, guid: 9a2f406a892d0d34b9a3db754293c8a1, type: 3}
   m_PrefabInstance: {fileID: 1817283601}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1824984323 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7659482438408431030, guid: e3c73f5e253535d43a95fd483ed7873e, type: 3}
-  m_PrefabInstance: {fileID: 1535429841}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1839627605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13030,6 +13041,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1733937870046424610, guid: a3932370b06269d42b8f2533da102038, type: 3}
   m_PrefabInstance: {fileID: 1958650589}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1959013886 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8258909342389844848, guid: e3c73f5e253535d43a95fd483ed7873e, type: 3}
+  m_PrefabInstance: {fileID: 1535429841}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1976194979
 PrefabInstance:
@@ -14356,10 +14372,6 @@ PrefabInstance:
     - target: {fileID: 4356719735199561775, guid: 9a2f406a892d0d34b9a3db754293c8a1, type: 3}
       propertyPath: m_Name
       value: RoadStraight
-      objectReference: {fileID: 0}
-    - target: {fileID: 5869128348286657837, guid: 9a2f406a892d0d34b9a3db754293c8a1, type: 3}
-      propertyPath: m_Convex
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a2f406a892d0d34b9a3db754293c8a1, type: 3}

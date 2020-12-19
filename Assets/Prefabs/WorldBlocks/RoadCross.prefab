@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1733937870046424610}
   - component: {fileID: 3440737862049980807}
   - component: {fileID: 602078904989586765}
-  - component: {fileID: -776605071493087740}
   - component: {fileID: -6153544869513460575}
   m_Layer: 0
   m_Name: RoadCross
@@ -85,20 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &-776605071493087740
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1394989859151983768}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7647103907335631042, guid: 7a1824d1ac3b987488ebda54420f6301, type: 3}
 --- !u!65 &-6153544869513460575
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -27,21 +27,23 @@ namespace Vehicle{
             forwardSpeed = Vector3.Dot(rb.velocity, transform.forward);
             sideSpeed = Vector3.Dot(rb.velocity, transform.right);
             OnGround();
-            OnDrifting();
+            OnLanding();
             if (!onGround)
                 return;
+            OnDrift();
             OnMove(carHandler.Direction);
         }
 
-        void OnDrifting(){
-            if (timer + 0.5f > Time.time){
-                print("Slide");
-                rb.AddForce((-sideSpeed * transform.right * 0.005f), ForceMode.VelocityChange);
-            }
-            else{
-                rb.AddForce((-sideSpeed * transform.right * carHandler.HandBreak), ForceMode.VelocityChange);
-            }
+        void OnDrift(){
+            rb.AddForce((-sideSpeed * transform.right * carHandler.HandBreak), ForceMode.VelocityChange);
         }
+
+        void OnLanding(){
+            if (timer + 0.5f < Time.time)
+                return;
+            rb.AddForce((-sideSpeed * transform.right * 0.005f), ForceMode.VelocityChange);
+        }
+
         void OnMove(Vector2 direction){
             if (forwardSpeed == Mathf.Clamp(forwardSpeed, -10, 25))
                 rb.AddForce(transform.forward * carHandler.Direction.x * carSo.Speed, ForceMode.Acceleration);

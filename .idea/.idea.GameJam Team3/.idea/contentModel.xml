@@ -10,14 +10,17 @@
         <e p="Scripts" t="Include">
           <e p="CameraScripts" t="Include">
             <e p="CameraFollow.cs" t="Include" />
+            <e p="SimpleCameraController.cs" t="Include" />
           </e>
-          <e p="SimpleCameraController.cs" t="Include" />
           <e p="Vehicle" t="Include">
             <e p="CarMovement.cs" t="Include" />
             <e p="CarSO.cs" t="Include" />
             <e p="Player" t="Include">
               <e p="PlayerInput.cs" t="Include" />
             </e>
+          </e>
+          <e p="Virus" t="Include">
+            <e p="VirusMovment.cs" t="Include" />
           </e>
         </e>
         <e p="TutorialInfo" t="Include">
