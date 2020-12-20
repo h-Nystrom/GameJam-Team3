@@ -22,6 +22,7 @@ namespace Patient{
         int kills;
         int point;
         int totalPatients;
+        bool killedLastPasient;
         
 
         void Start(){
@@ -50,7 +51,7 @@ namespace Patient{
             pointsEvent?.Invoke($"Saved: {point}/{totalPatients}");
         }
         void OnNewObjective(){
-            if (kills >= 3){
+            if (kills >= 3 || killedLastPasient){
                 GameOverEvent?.Invoke("Mission failed!");
                 return;
             }
@@ -87,6 +88,8 @@ namespace Patient{
             if (patient != currentPatient) return;
             nextTargetIndicator.gameObject.SetActive(false);
             hasPatients = false;
+            if (patientList.Count == 0)
+                killedLastPasient = true;
             OnNewObjective();
             
         }
