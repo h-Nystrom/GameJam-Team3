@@ -9,7 +9,6 @@ namespace Patient{
         [SerializeField] VoidEvent pickUpEvent;
         [SerializeField] VoidEvent deathEvent;
         [SerializeField] VoidEvent addPatientEvent;
-        [SerializeField] VoidEvent sickEvent;
         bool isSick;
         bool isDead;
 
@@ -19,10 +18,7 @@ namespace Patient{
 
         public bool IsSick{
             get => isSick;
-            set{
-                sickEvent?.Invoke();
-                isSick = value;
-            }
+            set => isSick = value;
         }
 
         void OnTriggerStay(Collider other){
