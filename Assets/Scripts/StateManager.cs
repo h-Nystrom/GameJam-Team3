@@ -8,8 +8,8 @@ public class StateManager : MonoBehaviour{
     [SerializeField] StringEvent gameOverEvent;
 
     void Start(){
-        startMenu.enabled = true;
         Time.timeScale = 0;
+        startMenu.enabled = true;
     }
 
     void Update(){
