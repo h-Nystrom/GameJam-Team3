@@ -12,6 +12,7 @@
             <e p="CameraFollow.cs" t="Include" />
             <e p="SimpleCameraController.cs" t="Include" />
           </e>
+          <e p="DeathHazard.cs" t="Include" />
           <e p="Patients" t="Include">
             <e p="HospitalScript.cs" t="Include" />
             <e p="JobManager.cs" t="Include" />
