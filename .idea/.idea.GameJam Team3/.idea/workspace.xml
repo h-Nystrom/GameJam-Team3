@@ -35,14 +35,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle/CarSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Virus/VirusMovment.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Patients/JobScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle/Player/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Patients/HospitalScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle/CarMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StateManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DeathHazard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/TimeLeft.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle/Player/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Patients/PatientsScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Patients/JobManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/TimeLeft.cs" />
       </list>
     </option>
   </component>
@@ -58,6 +58,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Game\GameJam Team3.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\UnityProjects_2020\Game" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -91,6 +99,9 @@
       <workItem from="1608394829614" duration="28313000" />
       <workItem from="1608457801245" duration="4529000" />
       <workItem from="1608470696460" duration="961000" />
+      <workItem from="1608473027286" duration="108000" />
+      <workItem from="1608473740711" duration="2959000" />
+      <workItem from="1608478315566" duration="1453000" />
     </task>
     <servers />
   </component>

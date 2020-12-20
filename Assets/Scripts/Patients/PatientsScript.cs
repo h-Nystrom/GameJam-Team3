@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -33,12 +34,14 @@ namespace Patient{
                 }
             }
         }
-        void OnCollisionEnter(Collision other){
+        void OnCollisionStay(Collision other){
             if (other.gameObject.layer == LayerMask.NameToLayer("Player")){
+                print("Collision1");
                 if(isDead) return;
                 isDead = true;
                 deathEvent?.Invoke();
-                Destroy(this.gameObject,5f);
+                Destroy(this);
+                print("Colllision after");
             }
         }
     }

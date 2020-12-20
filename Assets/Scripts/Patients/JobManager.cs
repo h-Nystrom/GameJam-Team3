@@ -51,10 +51,6 @@ namespace Patient{
             pointsEvent?.Invoke($"Saved: {point}/{totalPatients}");
         }
         void OnNewObjective(){
-            if (kills >= 3 || killedLastPasient){
-                GameOverEvent?.Invoke("Mission failed!");
-                return;
-            }
             if (patientList.Count > 0){
                 nextTarget = patientList[Random.Range(0, patientList.Count)];
                 nextTarget.GetComponent<PatientsScript>().IsSick = true;
@@ -85,11 +81,12 @@ namespace Patient{
             print(patientList.Count);
             kills++;
             killsEvent?.Invoke($"Accidents: {kills}/3");
+            if (patientList.Count == 0 || kills >= 3){
+                GameOverEvent?.Invoke("Mission failed!");
+            }
             if (patient != currentPatient) return;
             nextTargetIndicator.gameObject.SetActive(false);
             hasPatients = false;
-            if (patientList.Count == 0)
-                killedLastPasient = true;
             OnNewObjective();
             
         }

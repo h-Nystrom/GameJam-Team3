@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Searcher;
-using UnityEngine;
-using UnityEngine.EventSystems;
-using Vehicle;
-
+﻿using UnityEngine;
 namespace Vehicle.Player{
     
     public class PlayerInput : MonoBehaviour, ICarHandler{

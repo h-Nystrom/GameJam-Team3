@@ -40,6 +40,7 @@ public class StateManager : MonoBehaviour{
     }
 
     public void GameOver(string gameOverText){
+        print("GameOver");
         gameOverEvent?.Invoke(gameOverText);
         GameOverMenu.enabled = true;
         Time.timeScale = 0;
