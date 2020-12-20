@@ -1,14 +1,15 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Patient;
+﻿using Patient;
 using UnityEngine;
 
-public class HospitalScript : MonoBehaviour{
-    [SerializeField] VoidEvent inZoneEvent; 
-    void OnTriggerEnter(Collider other){
-        if (other.gameObject.layer == LayerMask.NameToLayer("Player")){
-            inZoneEvent?.Invoke();
+namespace Patients{
+    public class HospitalScript : MonoBehaviour{
+        [SerializeField] VoidEvent inZoneEvent;
+
+        void OnTriggerStay(Collider other){
+            if (other.gameObject.layer != LayerMask.NameToLayer("Player"))
+                return;
+            if (other.GetComponent<Rigidbody>().velocity.magnitude < 0.2f)
+                inZoneEvent?.Invoke();
         }
     }
 }

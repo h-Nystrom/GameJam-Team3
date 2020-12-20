@@ -23,7 +23,7 @@ namespace Patient{
 
         void OnTriggerStay(Collider other){
             if (other.gameObject.layer == LayerMask.NameToLayer("Player")){
-                if (!isDead && isSick && other.gameObject.GetComponent<Rigidbody>().velocity.magnitude <= 0.05f){
+                if (!isDead && isSick && other.gameObject.GetComponent<Rigidbody>().velocity.magnitude <= 0.1f){
                     pickUpEvent?.Invoke();
                     Destroy(this.gameObject);
                 }

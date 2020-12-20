@@ -16,7 +16,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraScripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Vehicle/CarMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Vehicle/CarSo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Patients/JobScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Patients/JobManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Virus/VirusMovment.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -31,12 +31,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle/Player/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle/CarSO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle/CarSo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle/CarMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Virus/VirusMovment.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Patients/HospitalScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Patients/JobScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle/Player/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Patients/PatientsScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Patients/JobManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Patients/HospitalScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle/CarMovement.cs" />
       </list>
     </option>
   </component>
@@ -82,7 +83,7 @@
       <workItem from="1608383221756" duration="5394000" />
       <workItem from="1608388638767" duration="2402000" />
       <workItem from="1608391064526" duration="3716000" />
-      <workItem from="1608394829614" duration="18637000" />
+      <workItem from="1608394829614" duration="28313000" />
     </task>
     <servers />
   </component>

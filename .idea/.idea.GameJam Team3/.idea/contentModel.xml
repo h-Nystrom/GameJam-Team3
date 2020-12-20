@@ -14,7 +14,7 @@
           </e>
           <e p="Patients" t="Include">
             <e p="HospitalScript.cs" t="Include" />
-            <e p="JobScript.cs" t="Include" />
+            <e p="JobManager.cs" t="Include" />
             <e p="PatientsScript.cs" t="Include" />
           </e>
           <e p="Vehicle" t="Include">

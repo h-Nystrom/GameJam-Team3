@@ -3,7 +3,7 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Patient{
-    public class JobScript : MonoBehaviour{
+    public class JobManager : MonoBehaviour{
         List<Transform> patientList = new List<Transform>();
         [SerializeField] Transform nextTargetIndicator;
         [SerializeField] Transform hospital;
@@ -27,7 +27,6 @@ namespace Patient{
 
         public void AddPatient(Transform patient){
             patientList.Add(patient);
-            print(patientList.Count);
             hasPatients = true;
         }
 
@@ -40,6 +39,7 @@ namespace Patient{
                 nextTarget = patientList[Random.Range(0, patientList.Count)];
                 nextTarget.GetComponent<PatientsScript>().IsSick = true;
                 nextTargetIndicator.gameObject.SetActive(true);
+                hasPatients = true;
                 currentPatient = nextTarget;
             }
             else{
@@ -64,6 +64,7 @@ namespace Patient{
             print(patientList.Count);
             kills++;
             if (patient != currentPatient) return;
+            nextTargetIndicator.gameObject.SetActive(false);
             hasPatients = false;
             OnNewObjective();
         }

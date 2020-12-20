@@ -7,14 +7,15 @@ namespace Vehicle{
     public class CarMovement : MonoBehaviour{
         [SerializeField] CarSo carSo;
         ICarHandler carHandler;
-        [SerializeField]bool onGround;
+        [SerializeField] bool onGround;
+        [SerializeField] bool onGroundSlide;
         [SerializeField] float raycastLenght;
         RaycastHit hit;
         float sideSpeed;
         float forwardSpeed;
         float startAngularDrag;
         Rigidbody rb => GetComponent<Rigidbody>();
-        float timer;
+
         void Awake(){
             carHandler = GetComponent<ICarHandler>();
         }
@@ -30,18 +31,30 @@ namespace Vehicle{
             OnLanding();
             if (!onGround)
                 return;
-            OnDrift();
+            OnHandBreak();
             OnMove(carHandler.Direction);
         }
 
-        void OnDrift(){
-            rb.AddForce((-sideSpeed * transform.right * carHandler.HandBreak), ForceMode.VelocityChange);
+        void OnHandBreak(){
+            if(onGroundSlide)
+                return;
+            if (carHandler.Direction.x >= 0f){
+                rb.AddForce(-sideSpeed * transform.right * carHandler.HandBreak, ForceMode.VelocityChange);
+                if (carHandler.Direction.x == 0 && carHandler.HandBreak < 0.1f)
+                    rb.velocity *= 0.96f;
+            }
+            else{
+                rb.AddForce(-sideSpeed * transform.right, ForceMode.VelocityChange);
+            }
         }
 
         void OnLanding(){
-            if (timer + 0.5f < Time.time)
+            if(!onGroundSlide)
                 return;
             rb.AddForce((-sideSpeed * transform.right * 0.005f), ForceMode.VelocityChange);
+            rb.velocity *= 0.96f;
+            if (sideSpeed == Mathf.Clamp(sideSpeed, -1, 1) || forwardSpeed > 15)
+                onGroundSlide = false;
         }
 
         void OnMove(Vector2 direction){
@@ -55,8 +68,8 @@ namespace Vehicle{
         void OnGround(){
             Debug.DrawRay(transform.position,-transform.up * raycastLenght);
             if (Physics.Raycast(transform.position, -transform.up, out hit, raycastLenght,1 << LayerMask.NameToLayer("Default"))){
-                if(!onGround)
-                    timer = Time.time;
+                if(!onGround) 
+                    onGroundSlide = true;
                 onGround = true;
                 rb.angularDrag= startAngularDrag;
             }
