@@ -13,6 +13,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Patients/PatientsScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Patients/HospitalScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TimeLeft.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraScripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Vehicle/CarMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Vehicle/CarSo.cs" root0="FORCE_HIGHLIGHTING" />
@@ -35,9 +36,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Patients/JobScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle/Player/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Patients/PatientsScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Patients/JobManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Patients/HospitalScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle/CarMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Patients/JobManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/TimeLeft.cs" />
       </list>
     </option>
   </component>
@@ -84,6 +87,7 @@
       <workItem from="1608388638767" duration="2402000" />
       <workItem from="1608391064526" duration="3716000" />
       <workItem from="1608394829614" duration="28313000" />
+      <workItem from="1608457801245" duration="3780000" />
     </task>
     <servers />
   </component>

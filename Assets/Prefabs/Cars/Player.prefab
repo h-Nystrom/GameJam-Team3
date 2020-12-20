@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 409292507}
   - component: {fileID: 409292508}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 409292506}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.4375}
-  m_LocalScale: {x: 2, y: 0.5, z: 0.25}
+  m_LocalPosition: {x: 0, y: 0.1, z: -0.4375}
+  m_LocalScale: {x: 2, y: 0.6, z: 0.25}
   m_Children: []
   m_Father: {fileID: 8258909342389844848}
   m_RootOrder: 1
@@ -55,7 +55,7 @@ GameObject:
   m_Component:
   - component: {fileID: 565185912}
   - component: {fileID: 565185913}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,8 +70,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565185911}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.4375}
-  m_LocalScale: {x: 2, y: 0.5, z: 0.25}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0.4375}
+  m_LocalScale: {x: 2, y: 0.6, z: 0.25}
   m_Children: []
   m_Father: {fileID: 8258909342389844848}
   m_RootOrder: 0
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 1789750908897593835}
   - component: {fileID: 1789750908897593832}
   - component: {fileID: 1789750908897593833}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CarModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789750908897593838}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 04deab2ed3b0be94f8c6450e0d13217c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -161,10 +161,10 @@ HingeJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789750908897593838}
   m_ConnectedBody: {fileID: 3336093747377395156}
-  m_Anchor: {x: 0, y: -0.3, z: 0}
+  m_Anchor: {x: 0, y: -0.35, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 1.085036, z: 0}
+  m_ConnectedAnchor: {x: 0, y: 0.93254185, z: 0}
   m_UseSpring: 1
   m_Spring:
     spring: 600
@@ -197,7 +197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7659482438408431030}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,9 +233,9 @@ GameObject:
   - component: {fileID: 3336093747377395156}
   - component: {fileID: 7521839096589781469}
   - component: {fileID: 905830089595319317}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Car
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -267,7 +267,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8258909342389844852}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 04deab2ed3b0be94f8c6450e0d13217c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -303,6 +303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carSo: {fileID: 11400000, guid: c2fe0e7aa86a0874fa53a0774530e272, type: 2}
   onGround: 0
+  onGroundSlide: 0
   raycastLenght: 1.25
 --- !u!114 &905830089595319317
 MonoBehaviour:
@@ -383,6 +384,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ambulans_Wheel
       objectReference: {fileID: 0}
+    - target: {fileID: 4190167423795519658, guid: e5d89d5e085973a449c7a135ca0d4e50, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5d89d5e085973a449c7a135ca0d4e50, type: 3}
 --- !u!4 &2871512830120878091 stripped
@@ -457,6 +462,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ambulans_Wheel (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4190167423795519658, guid: e5d89d5e085973a449c7a135ca0d4e50, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5d89d5e085973a449c7a135ca0d4e50, type: 3}
 --- !u!4 &3323216266779849203 stripped
@@ -471,6 +480,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1789750908897593828}
     m_Modifications:
+    - target: {fileID: 950497005648622000, guid: 7cb6bd11ef6949047912827ef02ceaf0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2630684835066661854, guid: 7cb6bd11ef6949047912827ef02ceaf0, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -530,6 +543,10 @@ PrefabInstance:
     - target: {fileID: 3443495905026085220, guid: 7cb6bd11ef6949047912827ef02ceaf0, type: 3}
       propertyPath: m_Name
       value: Ambulans
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443495905026085220, guid: 7cb6bd11ef6949047912827ef02ceaf0, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3443495905026085220, guid: 7cb6bd11ef6949047912827ef02ceaf0, type: 3}
       propertyPath: m_IsActive
@@ -609,6 +626,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ambulans_Wheel (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4190167423795519658, guid: e5d89d5e085973a449c7a135ca0d4e50, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5d89d5e085973a449c7a135ca0d4e50, type: 3}
 --- !u!4 &7073830006102323712 stripped
@@ -682,6 +703,10 @@ PrefabInstance:
     - target: {fileID: 4190167423795519658, guid: e5d89d5e085973a449c7a135ca0d4e50, type: 3}
       propertyPath: m_Name
       value: Ambulans_Wheel (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190167423795519658, guid: e5d89d5e085973a449c7a135ca0d4e50, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5d89d5e085973a449c7a135ca0d4e50, type: 3}

@@ -17,6 +17,10 @@
             <e p="JobManager.cs" t="Include" />
             <e p="PatientsScript.cs" t="Include" />
           </e>
+          <e p="StateManager.cs" t="Include" />
+          <e p="UI" t="Include">
+            <e p="TimeLeft.cs" t="Include" />
+          </e>
           <e p="Vehicle" t="Include">
             <e p="CarMovement.cs" t="Include" />
             <e p="CarSO.cs" t="Include" />
