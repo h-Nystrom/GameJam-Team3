@@ -1,4 +1,5 @@
-﻿using Patient;
+﻿using System;
+using Patient;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,11 @@ public class TimeLeft : MonoBehaviour{
     [SerializeField] float addTimeValue = 20f;
     [SerializeField] StringEvent GameOverEvent;
     Text timeCounter => GetComponent<Text>();
+
+    void Start(){
+        timeLeft += Time.time;
+    }
+
     void FixedUpdate(){
         var timer = timeLeft - Time.time;
         if (timer <= 0){
